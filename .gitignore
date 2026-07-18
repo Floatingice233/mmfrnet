@@ -20,8 +20,6 @@ __pycache__/
 *.swp
 *.swo
 
-# Logs
-*.log
 
 # OS
 .DS_Store
