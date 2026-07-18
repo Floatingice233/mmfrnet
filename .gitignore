@@ -1,0 +1,28 @@
+# Data
+data/
+*.npz
+
+# Checkpoints
+checkpoints/
+checkpoints_debug/
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
