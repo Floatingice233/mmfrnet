@@ -9,7 +9,7 @@ def get_config():
     # Dataset
     parser.add_argument("--dataset", type=str, default="pneumoniamnist",
                         choices=["dermamnist", "pneumoniamnist", "retinamnist",
-                                 "breastmnist", "organmnist_coronal"],
+                                 "breastmnist", "organcmnist"],
                         help="MedMNIST dataset name")
     parser.add_argument("--data_dir", type=str, default="./data",
                         help="Directory to store datasets")
