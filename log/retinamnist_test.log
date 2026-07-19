@@ -1,0 +1,92 @@
+Using device: cuda
+Loading dataset: retinamnist
+Using downloaded and verified file: ./data\retinamnist_224.npz
+Using downloaded and verified file: ./data\retinamnist_224.npz
+Train samples: 1080, Val samples: 120
+Number of classes: 5
+Model parameters: 3.27M
+
+Epoch 1/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.6818
+  Train Loss: 1.2796, ACC: 0.4630, AUC: 0.6754
+  Val   Loss: 1.3314, ACC: 0.5333, AUC: 0.7317
+  Best model saved (ACC=0.5333)
+
+Epoch 2/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.2237
+  Train Loss: 1.2046, ACC: 0.5046, AUC: 0.7243
+  Val   Loss: 1.1227, ACC: 0.4583, AUC: 0.7756
+
+Epoch 3/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.2003
+  Train Loss: 1.1810, ACC: 0.5093, AUC: 0.7369
+  Val   Loss: 1.2138, ACC: 0.4750, AUC: 0.7450
+
+Epoch 4/15 (lr=0.01000)
+  Batch 0/34, Loss: 0.9226
+  Train Loss: 1.1978, ACC: 0.5009, AUC: 0.7364
+  Val   Loss: 1.1725, ACC: 0.4917, AUC: 0.8112
+
+Epoch 5/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.2716
+  Train Loss: 1.1877, ACC: 0.5074, AUC: 0.7405
+  Val   Loss: 1.3270, ACC: 0.5000, AUC: 0.7317
+
+Epoch 6/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.0346
+  Train Loss: 1.1614, ACC: 0.5111, AUC: 0.7538
+  Val   Loss: 0.9980, ACC: 0.4750, AUC: 0.8240
+
+Epoch 7/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.2579
+  Train Loss: 1.1532, ACC: 0.5009, AUC: 0.7600
+  Val   Loss: 1.2374, ACC: 0.5167, AUC: 0.7570
+
+Epoch 8/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.1675
+  Train Loss: 1.1421, ACC: 0.5102, AUC: 0.7673
+  Val   Loss: 1.2406, ACC: 0.5917, AUC: 0.7753
+  Best model saved (ACC=0.5917)
+
+Epoch 9/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.3171
+  Train Loss: 1.1568, ACC: 0.5296, AUC: 0.7606
+  Val   Loss: 1.1404, ACC: 0.5833, AUC: 0.7820
+
+Epoch 10/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.1468
+  Train Loss: 1.1372, ACC: 0.5204, AUC: 0.7727
+  Val   Loss: 1.2120, ACC: 0.4250, AUC: 0.7289
+
+Epoch 11/15 (lr=0.01000)
+  Batch 0/34, Loss: 0.9238
+  Train Loss: 1.1433, ACC: 0.5139, AUC: 0.7597
+  Val   Loss: 1.0727, ACC: 0.4917, AUC: 0.7986
+
+Epoch 12/15 (lr=0.01000)
+  Batch 0/34, Loss: 0.9881
+  Train Loss: 1.0932, ACC: 0.5380, AUC: 0.7877
+  Val   Loss: 1.0969, ACC: 0.4667, AUC: 0.7852
+
+Epoch 13/15 (lr=0.01000)
+  Batch 0/34, Loss: 0.9084
+  Train Loss: 1.1011, ACC: 0.5194, AUC: 0.7881
+  Val   Loss: 1.1753, ACC: 0.5167, AUC: 0.7749
+
+Epoch 14/15 (lr=0.01000)
+  Batch 0/34, Loss: 1.0971
+  Train Loss: 1.0865, ACC: 0.5593, AUC: 0.7957
+  Val   Loss: 1.1250, ACC: 0.4667, AUC: 0.7755
+
+Epoch 15/15 (lr=0.01000)
+  Batch 0/34, Loss: 0.9665
+  Train Loss: 1.0743, ACC: 0.5435, AUC: 0.8015
+  Val   Loss: 1.1788, ACC: 0.5083, AUC: 0.7805
+
+Training complete. Best val ACC: 0.5917
+
+Loading test set...
+Using downloaded and verified file: ./data\retinamnist_224.npz
+D:\Documents\Python Programs\lab\2026.7.17 论文重投\project\train.py:187: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(os.path.join(args.save_dir, "best.pth"))
+Test  Loss: 1.2666, ACC: 0.5050, AUC: 0.7222

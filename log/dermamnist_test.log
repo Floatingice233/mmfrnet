@@ -6,7 +6,7 @@ Train samples: 7007, Val samples: 1003
 Number of classes: 7
 Model parameters: 3.27M
 
-Epoch 1/150 (lr=0.01000)
+Epoch 1/15 (lr=0.01000)
   Batch 0/219, Loss: 1.9090
   Batch 50/219, Loss: 0.8852
   Batch 100/219, Loss: 1.1505
@@ -16,7 +16,7 @@ Epoch 1/150 (lr=0.01000)
   Val   Loss: 0.9866, ACC: 0.6790, AUC: 0.8056
   Best model saved (ACC=0.6790)
 
-Epoch 2/150 (lr=0.01000)
+Epoch 2/15 (lr=0.01000)
   Batch 0/219, Loss: 0.6617
   Batch 50/219, Loss: 0.8332
   Batch 100/219, Loss: 1.1625
@@ -26,7 +26,7 @@ Epoch 2/150 (lr=0.01000)
   Val   Loss: 0.7955, ACC: 0.7129, AUC: 0.8840
   Best model saved (ACC=0.7129)
 
-Epoch 3/150 (lr=0.01000)
+Epoch 3/15 (lr=0.01000)
   Batch 0/219, Loss: 0.7115
   Batch 50/219, Loss: 0.8374
   Batch 100/219, Loss: 0.7565
@@ -36,7 +36,7 @@ Epoch 3/150 (lr=0.01000)
   Val   Loss: 0.7739, ACC: 0.7218, AUC: 0.8852
   Best model saved (ACC=0.7218)
 
-Epoch 4/150 (lr=0.01000)
+Epoch 4/15 (lr=0.01000)
   Batch 0/219, Loss: 0.6014
   Batch 50/219, Loss: 0.6804
   Batch 100/219, Loss: 0.5613
@@ -45,7 +45,7 @@ Epoch 4/150 (lr=0.01000)
   Train Loss: 0.7269, ACC: 0.7360, AUC: 0.8976
   Val   Loss: 0.7678, ACC: 0.7109, AUC: 0.9026
 
-Epoch 5/150 (lr=0.01000)
+Epoch 5/15 (lr=0.01000)
   Batch 0/219, Loss: 0.7255
   Batch 50/219, Loss: 0.7784
   Batch 100/219, Loss: 0.6862
@@ -55,7 +55,7 @@ Epoch 5/150 (lr=0.01000)
   Val   Loss: 0.7216, ACC: 0.7468, AUC: 0.8923
   Best model saved (ACC=0.7468)
 
-Epoch 6/150 (lr=0.01000)
+Epoch 6/15 (lr=0.01000)
   Batch 0/219, Loss: 0.7382
   Batch 50/219, Loss: 0.4889
   Batch 100/219, Loss: 0.5444
@@ -64,7 +64,7 @@ Epoch 6/150 (lr=0.01000)
   Train Loss: 0.6939, ACC: 0.7413, AUC: 0.9065
   Val   Loss: 0.7128, ACC: 0.7438, AUC: 0.9187
 
-Epoch 7/150 (lr=0.01000)
+Epoch 7/15 (lr=0.01000)
   Batch 0/219, Loss: 0.6333
   Batch 50/219, Loss: 0.6729
   Batch 100/219, Loss: 0.7056
@@ -74,7 +74,7 @@ Epoch 7/150 (lr=0.01000)
   Val   Loss: 0.6897, ACC: 0.7597, AUC: 0.9154
   Best model saved (ACC=0.7597)
 
-Epoch 8/150 (lr=0.01000)
+Epoch 8/15 (lr=0.01000)
   Batch 0/219, Loss: 0.4577
   Batch 50/219, Loss: 0.8632
   Batch 100/219, Loss: 0.8079
@@ -83,7 +83,7 @@ Epoch 8/150 (lr=0.01000)
   Train Loss: 0.6472, ACC: 0.7550, AUC: 0.9241
   Val   Loss: 0.6774, ACC: 0.7428, AUC: 0.9207
 
-Epoch 9/150 (lr=0.01000)
+Epoch 9/15 (lr=0.01000)
   Batch 0/219, Loss: 0.6009
   Batch 50/219, Loss: 0.4774
   Batch 100/219, Loss: 0.6796
@@ -92,7 +92,7 @@ Epoch 9/150 (lr=0.01000)
   Train Loss: 0.6364, ACC: 0.7625, AUC: 0.9254
   Val   Loss: 0.6886, ACC: 0.7438, AUC: 0.9223
 
-Epoch 10/150 (lr=0.01000)
+Epoch 10/15 (lr=0.01000)
   Batch 0/219, Loss: 0.3555
   Batch 50/219, Loss: 0.6427
   Batch 100/219, Loss: 0.6499
@@ -101,7 +101,7 @@ Epoch 10/150 (lr=0.01000)
   Train Loss: 0.6105, ACC: 0.7747, AUC: 0.9328
   Val   Loss: 0.6442, ACC: 0.7597, AUC: 0.9251
 
-Epoch 11/150 (lr=0.01000)
+Epoch 11/15 (lr=0.01000)
   Batch 0/219, Loss: 0.6602
   Batch 50/219, Loss: 0.6613
   Batch 100/219, Loss: 0.7373
@@ -110,7 +110,7 @@ Epoch 11/150 (lr=0.01000)
   Train Loss: 0.5937, ACC: 0.7768, AUC: 0.9372
   Val   Loss: 0.7866, ACC: 0.6989, AUC: 0.8975
 
-Epoch 12/150 (lr=0.01000)
+Epoch 12/15 (lr=0.01000)
   Batch 0/219, Loss: 0.3857
   Batch 50/219, Loss: 0.7277
   Batch 100/219, Loss: 0.7681
@@ -119,7 +119,7 @@ Epoch 12/150 (lr=0.01000)
   Train Loss: 0.5620, ACC: 0.7909, AUC: 0.9448
   Val   Loss: 0.6721, ACC: 0.7448, AUC: 0.9196
 
-Epoch 13/150 (lr=0.01000)
+Epoch 13/15 (lr=0.01000)
   Batch 0/219, Loss: 0.3503
   Batch 50/219, Loss: 0.4409
   Batch 100/219, Loss: 0.7043
@@ -128,7 +128,7 @@ Epoch 13/150 (lr=0.01000)
   Train Loss: 0.5239, ACC: 0.8029, AUC: 0.9529
   Val   Loss: 0.7757, ACC: 0.7428, AUC: 0.9000
 
-Epoch 14/150 (lr=0.01000)
+Epoch 14/15 (lr=0.01000)
   Batch 0/219, Loss: 0.4145
   Batch 50/219, Loss: 0.3256
   Batch 100/219, Loss: 0.3998
@@ -137,7 +137,7 @@ Epoch 14/150 (lr=0.01000)
   Train Loss: 0.4947, ACC: 0.8236, AUC: 0.9572
   Val   Loss: 0.8141, ACC: 0.7159, AUC: 0.8787
 
-Epoch 15/150 (lr=0.01000)
+Epoch 15/15 (lr=0.01000)
   Batch 0/219, Loss: 0.5068
   Batch 50/219, Loss: 0.6932
   Batch 100/219, Loss: 0.2816
@@ -146,77 +146,10 @@ Epoch 15/150 (lr=0.01000)
   Train Loss: 0.4511, ACC: 0.8336, AUC: 0.9644
   Val   Loss: 0.7660, ACC: 0.7507, AUC: 0.9180
 
-Epoch 16/150 (lr=0.01000)
-  Batch 0/219, Loss: 0.4755
-  Batch 50/219, Loss: 0.6226
-  Batch 100/219, Loss: 0.2717
-  Batch 150/219, Loss: 0.3289
-  Batch 200/219, Loss: 0.3987
-  Train Loss: 0.3919, ACC: 0.8579, AUC: 0.9730
-  Val   Loss: 0.8149, ACC: 0.7188, AUC: 0.8967
+Training complete. Best val ACC: 0.7597
 
-Epoch 17/150 (lr=0.01000)
-  Batch 0/219, Loss: 0.2575
-  Batch 50/219, Loss: 0.2222
-  Batch 100/219, Loss: 0.4674
-  Batch 150/219, Loss: 0.1377
-  Batch 200/219, Loss: 0.3512
-  Train Loss: 0.3291, ACC: 0.8804, AUC: 0.9797
-  Val   Loss: 1.0110, ACC: 0.6720, AUC: 0.8840
-
-Epoch 18/150 (lr=0.01000)
-  Batch 0/219, Loss: 0.2641
-  Batch 50/219, Loss: 0.1523
-  Batch 100/219, Loss: 0.2384
-  Batch 150/219, Loss: 0.5705
-  Batch 200/219, Loss: 0.3279
-  Train Loss: 0.2782, ACC: 0.9001, AUC: 0.9870
-  Val   Loss: 1.0740, ACC: 0.7039, AUC: 0.8954
-
-Epoch 19/150 (lr=0.01000)
-  Batch 0/219, Loss: 0.0916
-  Batch 50/219, Loss: 0.2627
-  Batch 100/219, Loss: 0.1170
-  Batch 150/219, Loss: 0.3457
-  Batch 200/219, Loss: 0.3326
-  Train Loss: 0.2231, ACC: 0.9212, AUC: 0.9913
-  Val   Loss: 1.4315, ACC: 0.7149, AUC: 0.8903
-
-Epoch 20/150 (lr=0.01000)
-  Batch 0/219, Loss: 0.3956
-  Batch 50/219, Loss: 0.1478
-  Batch 100/219, Loss: 0.2299
-  Batch 150/219, Loss: 0.1326
-  Batch 200/219, Loss: 0.2912
-  Train Loss: 0.1743, ACC: 0.9386, AUC: 0.9949
-  Val   Loss: 1.1918, ACC: 0.7248, AUC: 0.8766
-
-Epoch 21/150 (lr=0.01000)
-  Batch 0/219, Loss: 0.2474
-  Batch 50/219, Loss: 0.1086
-  Batch 100/219, Loss: 0.1334
-  Batch 150/219, Loss: 0.0403
-  Batch 200/219, Loss: 0.1637
-  Train Loss: 0.1410, ACC: 0.9492, AUC: 0.9962
-  Val   Loss: 1.1386, ACC: 0.7268, AUC: 0.8957
-
-Epoch 22/150 (lr=0.01000)
-  Batch 0/219, Loss: 0.0583
-  Batch 50/219, Loss: 0.0778
-  Batch 100/219, Loss: 0.0562
-  Batch 150/219, Loss: 0.0554
-  Batch 200/219, Loss: 0.1954
-  Train Loss: 0.1109, ACC: 0.9613, AUC: 0.9979
-  Val   Loss: 1.1862, ACC: 0.7398, AUC: 0.8956
-
-Epoch 23/150 (lr=0.01000)
-  Batch 0/219, Loss: 0.0360
-  Batch 50/219, Loss: 0.0721
-  Batch 100/219, Loss: 0.1075
-  Batch 150/219, Loss: 0.1595
-  Batch 200/219, Loss: 0.0997
-  Train Loss: 0.0985, ACC: 0.9647, AUC: 0.9981
-  Val   Loss: 1.2230, ACC: 0.7308, AUC: 0.8960
-
-Epoch 24/150 (lr=0.01000)
-  Batch 0/219, Loss: 0.1954
+Loading test set...
+Using downloaded and verified file: ./data\dermamnist_224.npz
+D:\Documents\Python Programs\lab\2026.7.17 论文重投\project\train.py:187: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(os.path.join(args.save_dir, "best.pth"))
+Test  Loss: 0.7036, ACC: 0.7456, AUC: 0.9105
