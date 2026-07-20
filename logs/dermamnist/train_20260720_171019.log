@@ -1,0 +1,321 @@
+Using device: cuda
+Loading dataset: dermamnist
+Using downloaded and verified file: ./data\dermamnist_224.npz
+Using downloaded and verified file: ./data\dermamnist_224.npz
+Train samples: 7007, Val samples: 1003
+Number of classes: 7
+Model parameters: 3.27M
+  Batch 0/219, Loss: 1.9090
+  Batch 50/219, Loss: 0.8852
+  Batch 100/219, Loss: 1.1505
+  Batch 150/219, Loss: 0.7975
+  Batch 200/219, Loss: 0.8383
+2026-07-20 17:13:17 | 158.7s | Epoch   1/50 | lr=0.01000 | Train Loss: 0.9165 ACC: 0.6829 AUC: 0.8036 | Val Loss: 0.9866 ACC: 0.6790 AUC: 0.8056
+  -> New best saved (ACC=0.6790)
+  Batch 0/219, Loss: 0.6617
+  Batch 50/219, Loss: 0.8332
+  Batch 100/219, Loss: 1.1625
+  Batch 150/219, Loss: 0.9036
+  Batch 200/219, Loss: 0.9649
+2026-07-20 17:15:53 | 156.0s | Epoch   2/50 | lr=0.01000 | Train Loss: 0.8160 ACC: 0.7074 AUC: 0.8575 | Val Loss: 0.7955 ACC: 0.7129 AUC: 0.8840
+  -> New best saved (ACC=0.7129)
+  Batch 0/219, Loss: 0.7115
+  Batch 50/219, Loss: 0.8374
+  Batch 100/219, Loss: 0.7565
+  Batch 150/219, Loss: 0.5888
+  Batch 200/219, Loss: 0.9008
+2026-07-20 17:18:30 | 156.6s | Epoch   3/50 | lr=0.01000 | Train Loss: 0.7749 ACC: 0.7159 AUC: 0.8805 | Val Loss: 0.7739 ACC: 0.7218 AUC: 0.8852
+  -> New best saved (ACC=0.7218)
+  Batch 0/219, Loss: 0.6014
+  Batch 50/219, Loss: 0.6804
+  Batch 100/219, Loss: 0.5613
+  Batch 150/219, Loss: 0.9581
+  Batch 200/219, Loss: 0.9247
+2026-07-20 17:21:07 | 157.0s | Epoch   4/50 | lr=0.01000 | Train Loss: 0.7269 ACC: 0.7360 AUC: 0.8976 | Val Loss: 0.7678 ACC: 0.7109 AUC: 0.9026
+  Batch 0/219, Loss: 0.7255
+  Batch 50/219, Loss: 0.7784
+  Batch 100/219, Loss: 0.6862
+  Batch 150/219, Loss: 0.5696
+  Batch 200/219, Loss: 0.5473
+2026-07-20 17:23:43 | 155.2s | Epoch   5/50 | lr=0.01000 | Train Loss: 0.7121 ACC: 0.7306 AUC: 0.9051 | Val Loss: 0.7216 ACC: 0.7468 AUC: 0.8923
+  -> New best saved (ACC=0.7468)
+  Batch 0/219, Loss: 0.7382
+  Batch 50/219, Loss: 0.4889
+  Batch 100/219, Loss: 0.5444
+  Batch 150/219, Loss: 0.6512
+  Batch 200/219, Loss: 0.6590
+2026-07-20 17:26:20 | 156.7s | Epoch   6/50 | lr=0.01000 | Train Loss: 0.6939 ACC: 0.7413 AUC: 0.9065 | Val Loss: 0.7128 ACC: 0.7438 AUC: 0.9187
+  Batch 0/219, Loss: 0.6333
+  Batch 50/219, Loss: 0.6729
+  Batch 100/219, Loss: 0.7056
+  Batch 150/219, Loss: 0.3783
+  Batch 200/219, Loss: 0.5612
+2026-07-20 17:28:56 | 155.8s | Epoch   7/50 | lr=0.01000 | Train Loss: 0.6700 ACC: 0.7478 AUC: 0.9167 | Val Loss: 0.6897 ACC: 0.7597 AUC: 0.9154
+  -> New best saved (ACC=0.7597)
+  Batch 0/219, Loss: 0.4577
+  Batch 50/219, Loss: 0.8632
+  Batch 100/219, Loss: 0.8079
+  Batch 150/219, Loss: 0.8010
+  Batch 200/219, Loss: 0.8355
+2026-07-20 17:31:30 | 154.2s | Epoch   8/50 | lr=0.01000 | Train Loss: 0.6472 ACC: 0.7550 AUC: 0.9241 | Val Loss: 0.6774 ACC: 0.7428 AUC: 0.9207
+  Batch 0/219, Loss: 0.6009
+  Batch 50/219, Loss: 0.4774
+  Batch 100/219, Loss: 0.6796
+  Batch 150/219, Loss: 0.7850
+  Batch 200/219, Loss: 0.6950
+2026-07-20 17:34:04 | 154.3s | Epoch   9/50 | lr=0.01000 | Train Loss: 0.6364 ACC: 0.7625 AUC: 0.9254 | Val Loss: 0.6886 ACC: 0.7438 AUC: 0.9223
+  Batch 0/219, Loss: 0.3555
+  Batch 50/219, Loss: 0.6427
+  Batch 100/219, Loss: 0.6499
+  Batch 150/219, Loss: 0.4197
+  Batch 200/219, Loss: 0.5546
+2026-07-20 17:36:40 | 154.9s | Epoch  10/50 | lr=0.01000 | Train Loss: 0.6105 ACC: 0.7747 AUC: 0.9328 | Val Loss: 0.6442 ACC: 0.7597 AUC: 0.9251
+  Batch 0/219, Loss: 0.6602
+  Batch 50/219, Loss: 0.6613
+  Batch 100/219, Loss: 0.7373
+  Batch 150/219, Loss: 0.5573
+  Batch 200/219, Loss: 0.5141
+2026-07-20 17:39:14 | 154.3s | Epoch  11/50 | lr=0.01000 | Train Loss: 0.5937 ACC: 0.7768 AUC: 0.9372 | Val Loss: 0.7866 ACC: 0.6989 AUC: 0.8975
+  Batch 0/219, Loss: 0.3857
+  Batch 50/219, Loss: 0.7277
+  Batch 100/219, Loss: 0.7681
+  Batch 150/219, Loss: 0.5100
+  Batch 200/219, Loss: 0.6432
+2026-07-20 17:41:49 | 155.0s | Epoch  12/50 | lr=0.01000 | Train Loss: 0.5620 ACC: 0.7909 AUC: 0.9448 | Val Loss: 0.6721 ACC: 0.7448 AUC: 0.9196
+  Batch 0/219, Loss: 0.3503
+  Batch 50/219, Loss: 0.4409
+  Batch 100/219, Loss: 0.7043
+  Batch 150/219, Loss: 0.4223
+  Batch 200/219, Loss: 0.3842
+2026-07-20 17:44:28 | 158.5s | Epoch  13/50 | lr=0.01000 | Train Loss: 0.5239 ACC: 0.8029 AUC: 0.9529 | Val Loss: 0.7757 ACC: 0.7428 AUC: 0.9000
+  Batch 0/219, Loss: 0.4145
+  Batch 50/219, Loss: 0.3256
+  Batch 100/219, Loss: 0.3998
+  Batch 150/219, Loss: 0.7500
+  Batch 200/219, Loss: 0.6293
+2026-07-20 17:47:04 | 156.1s | Epoch  14/50 | lr=0.01000 | Train Loss: 0.4947 ACC: 0.8236 AUC: 0.9572 | Val Loss: 0.8141 ACC: 0.7159 AUC: 0.8787
+  Batch 0/219, Loss: 0.5068
+  Batch 50/219, Loss: 0.6932
+  Batch 100/219, Loss: 0.2816
+  Batch 150/219, Loss: 0.5306
+  Batch 200/219, Loss: 0.2992
+2026-07-20 17:49:38 | 153.4s | Epoch  15/50 | lr=0.01000 | Train Loss: 0.4511 ACC: 0.8336 AUC: 0.9644 | Val Loss: 0.7660 ACC: 0.7507 AUC: 0.9180
+  Batch 0/219, Loss: 0.4755
+  Batch 50/219, Loss: 0.6226
+  Batch 100/219, Loss: 0.2717
+  Batch 150/219, Loss: 0.3289
+  Batch 200/219, Loss: 0.3987
+2026-07-20 17:52:12 | 154.4s | Epoch  16/50 | lr=0.01000 | Train Loss: 0.3919 ACC: 0.8579 AUC: 0.9730 | Val Loss: 0.8149 ACC: 0.7188 AUC: 0.8967
+  Batch 0/219, Loss: 0.2575
+  Batch 50/219, Loss: 0.2222
+  Batch 100/219, Loss: 0.4674
+  Batch 150/219, Loss: 0.1377
+  Batch 200/219, Loss: 0.3512
+2026-07-20 17:54:45 | 152.5s | Epoch  17/50 | lr=0.01000 | Train Loss: 0.3291 ACC: 0.8804 AUC: 0.9797 | Val Loss: 1.0110 ACC: 0.6720 AUC: 0.8840
+  Batch 0/219, Loss: 0.2641
+  Batch 50/219, Loss: 0.1523
+  Batch 100/219, Loss: 0.2384
+  Batch 150/219, Loss: 0.5705
+  Batch 200/219, Loss: 0.3279
+2026-07-20 17:57:19 | 154.0s | Epoch  18/50 | lr=0.01000 | Train Loss: 0.2782 ACC: 0.9001 AUC: 0.9870 | Val Loss: 1.0740 ACC: 0.7039 AUC: 0.8954
+  Batch 0/219, Loss: 0.0916
+  Batch 50/219, Loss: 0.2627
+  Batch 100/219, Loss: 0.1170
+  Batch 150/219, Loss: 0.3457
+  Batch 200/219, Loss: 0.3326
+2026-07-20 17:59:55 | 156.2s | Epoch  19/50 | lr=0.01000 | Train Loss: 0.2231 ACC: 0.9212 AUC: 0.9913 | Val Loss: 1.4315 ACC: 0.7149 AUC: 0.8903
+  Batch 0/219, Loss: 0.3956
+  Batch 50/219, Loss: 0.1478
+  Batch 100/219, Loss: 0.2299
+  Batch 150/219, Loss: 0.1326
+  Batch 200/219, Loss: 0.2912
+2026-07-20 18:02:30 | 154.6s | Epoch  20/50 | lr=0.01000 | Train Loss: 0.1743 ACC: 0.9386 AUC: 0.9949 | Val Loss: 1.1918 ACC: 0.7248 AUC: 0.8766
+  Batch 0/219, Loss: 0.2474
+  Batch 50/219, Loss: 0.1086
+  Batch 100/219, Loss: 0.1334
+  Batch 150/219, Loss: 0.0403
+  Batch 200/219, Loss: 0.1637
+2026-07-20 18:05:04 | 153.8s | Epoch  21/50 | lr=0.01000 | Train Loss: 0.1410 ACC: 0.9492 AUC: 0.9962 | Val Loss: 1.1386 ACC: 0.7268 AUC: 0.8957
+  Batch 0/219, Loss: 0.0583
+  Batch 50/219, Loss: 0.0778
+  Batch 100/219, Loss: 0.0562
+  Batch 150/219, Loss: 0.0554
+  Batch 200/219, Loss: 0.1954
+2026-07-20 18:07:38 | 153.9s | Epoch  22/50 | lr=0.01000 | Train Loss: 0.1109 ACC: 0.9613 AUC: 0.9979 | Val Loss: 1.1862 ACC: 0.7398 AUC: 0.8956
+  Batch 0/219, Loss: 0.0360
+  Batch 50/219, Loss: 0.0721
+  Batch 100/219, Loss: 0.1075
+  Batch 150/219, Loss: 0.1595
+  Batch 200/219, Loss: 0.0997
+2026-07-20 18:10:12 | 153.7s | Epoch  23/50 | lr=0.01000 | Train Loss: 0.0985 ACC: 0.9647 AUC: 0.9981 | Val Loss: 1.2230 ACC: 0.7308 AUC: 0.8960
+  Batch 0/219, Loss: 0.1954
+  Batch 50/219, Loss: 0.0906
+  Batch 100/219, Loss: 0.0214
+  Batch 150/219, Loss: 0.0172
+  Batch 200/219, Loss: 0.0622
+2026-07-20 18:12:46 | 154.6s | Epoch  24/50 | lr=0.01000 | Train Loss: 0.0883 ACC: 0.9709 AUC: 0.9983 | Val Loss: 1.3179 ACC: 0.7328 AUC: 0.9019
+  Batch 0/219, Loss: 0.0053
+  Batch 50/219, Loss: 0.0826
+  Batch 100/219, Loss: 0.2564
+  Batch 150/219, Loss: 0.0095
+  Batch 200/219, Loss: 0.0224
+2026-07-20 18:15:22 | 155.0s | Epoch  25/50 | lr=0.01000 | Train Loss: 0.0759 ACC: 0.9726 AUC: 0.9989 | Val Loss: 1.3171 ACC: 0.7378 AUC: 0.8916
+  Batch 0/219, Loss: 0.0312
+  Batch 50/219, Loss: 0.0099
+  Batch 100/219, Loss: 0.2187
+  Batch 150/219, Loss: 0.1945
+  Batch 200/219, Loss: 0.2601
+2026-07-20 18:17:59 | 157.2s | Epoch  26/50 | lr=0.01000 | Train Loss: 0.0721 ACC: 0.9755 AUC: 0.9989 | Val Loss: 1.3289 ACC: 0.7228 AUC: 0.9017
+  Batch 0/219, Loss: 0.0149
+  Batch 50/219, Loss: 0.0148
+  Batch 100/219, Loss: 0.0392
+  Batch 150/219, Loss: 0.0335
+  Batch 200/219, Loss: 0.0235
+2026-07-20 18:20:35 | 155.8s | Epoch  27/50 | lr=0.01000 | Train Loss: 0.0365 ACC: 0.9892 AUC: 0.9998 | Val Loss: 1.3291 ACC: 0.7258 AUC: 0.9014
+  Batch 0/219, Loss: 0.0150
+  Batch 50/219, Loss: 0.0169
+  Batch 100/219, Loss: 0.0030
+  Batch 150/219, Loss: 0.0046
+  Batch 200/219, Loss: 0.0391
+2026-07-20 18:23:12 | 156.8s | Epoch  28/50 | lr=0.01000 | Train Loss: 0.0336 ACC: 0.9902 AUC: 0.9996 | Val Loss: 1.5623 ACC: 0.7298 AUC: 0.8936
+  Batch 0/219, Loss: 0.0042
+  Batch 50/219, Loss: 0.0429
+  Batch 100/219, Loss: 0.0017
+  Batch 150/219, Loss: 0.0087
+  Batch 200/219, Loss: 0.0304
+2026-07-20 18:25:51 | 158.8s | Epoch  29/50 | lr=0.01000 | Train Loss: 0.0239 ACC: 0.9933 AUC: 0.9999 | Val Loss: 1.4765 ACC: 0.7358 AUC: 0.9004
+  Batch 0/219, Loss: 0.0416
+  Batch 50/219, Loss: 0.0409
+  Batch 100/219, Loss: 0.0117
+  Batch 150/219, Loss: 0.0053
+  Batch 200/219, Loss: 0.0020
+2026-07-20 18:28:27 | 155.9s | Epoch  30/50 | lr=0.01000 | Train Loss: 0.0227 ACC: 0.9943 AUC: 0.9998 | Val Loss: 1.3421 ACC: 0.7647 AUC: 0.9058
+  -> New best saved (ACC=0.7647)
+  Batch 0/219, Loss: 0.0346
+  Batch 50/219, Loss: 0.0003
+  Batch 100/219, Loss: 0.0016
+  Batch 150/219, Loss: 0.0018
+  Batch 200/219, Loss: 0.0156
+2026-07-20 18:31:03 | 155.7s | Epoch  31/50 | lr=0.01000 | Train Loss: 0.0102 ACC: 0.9970 AUC: 1.0000 | Val Loss: 1.4534 ACC: 0.7268 AUC: 0.9021
+  Batch 0/219, Loss: 0.0095
+  Batch 50/219, Loss: 0.0012
+  Batch 100/219, Loss: 0.0002
+  Batch 150/219, Loss: 0.0005
+  Batch 200/219, Loss: 0.0131
+2026-07-20 18:33:38 | 155.6s | Epoch  32/50 | lr=0.01000 | Train Loss: 0.0131 ACC: 0.9966 AUC: 1.0000 | Val Loss: 1.6743 ACC: 0.7388 AUC: 0.8862
+  Batch 0/219, Loss: 0.0020
+  Batch 50/219, Loss: 0.0030
+  Batch 100/219, Loss: 0.0042
+  Batch 150/219, Loss: 0.0086
+  Batch 200/219, Loss: 0.0007
+2026-07-20 18:36:13 | 154.6s | Epoch  33/50 | lr=0.01000 | Train Loss: 0.0126 ACC: 0.9964 AUC: 1.0000 | Val Loss: 1.5255 ACC: 0.7398 AUC: 0.8947
+  Batch 0/219, Loss: 0.0028
+  Batch 50/219, Loss: 0.0225
+  Batch 100/219, Loss: 0.2124
+  Batch 150/219, Loss: 0.0029
+  Batch 200/219, Loss: 0.0527
+2026-07-20 18:38:46 | 152.8s | Epoch  34/50 | lr=0.01000 | Train Loss: 0.0303 ACC: 0.9896 AUC: 0.9998 | Val Loss: 1.7174 ACC: 0.7109 AUC: 0.8953
+  Batch 0/219, Loss: 0.0412
+  Batch 50/219, Loss: 0.1568
+  Batch 100/219, Loss: 0.0480
+  Batch 150/219, Loss: 0.0102
+  Batch 200/219, Loss: 0.0551
+2026-07-20 18:41:23 | 156.9s | Epoch  35/50 | lr=0.01000 | Train Loss: 0.0328 ACC: 0.9890 AUC: 0.9998 | Val Loss: 1.7829 ACC: 0.7188 AUC: 0.8915
+  Batch 0/219, Loss: 0.0286
+  Batch 50/219, Loss: 0.0112
+  Batch 100/219, Loss: 0.0345
+  Batch 150/219, Loss: 0.0015
+  Batch 200/219, Loss: 0.0065
+2026-07-20 18:44:00 | 156.9s | Epoch  36/50 | lr=0.01000 | Train Loss: 0.0160 ACC: 0.9953 AUC: 1.0000 | Val Loss: 1.5136 ACC: 0.7438 AUC: 0.8944
+  Batch 0/219, Loss: 0.0046
+  Batch 50/219, Loss: 0.0138
+  Batch 100/219, Loss: 0.0037
+  Batch 150/219, Loss: 0.0031
+  Batch 200/219, Loss: 0.0041
+2026-07-20 18:46:36 | 155.8s | Epoch  37/50 | lr=0.01000 | Train Loss: 0.0099 ACC: 0.9974 AUC: 1.0000 | Val Loss: 1.5414 ACC: 0.7408 AUC: 0.9003
+  Batch 0/219, Loss: 0.0007
+  Batch 50/219, Loss: 0.0002
+  Batch 100/219, Loss: 0.0047
+  Batch 150/219, Loss: 0.0160
+  Batch 200/219, Loss: 0.0038
+2026-07-20 18:49:14 | 157.8s | Epoch  38/50 | lr=0.01000 | Train Loss: 0.0114 ACC: 0.9973 AUC: 1.0000 | Val Loss: 1.5817 ACC: 0.7468 AUC: 0.9084
+  Batch 0/219, Loss: 0.0010
+  Batch 50/219, Loss: 0.0076
+  Batch 100/219, Loss: 0.0003
+  Batch 150/219, Loss: 0.0063
+  Batch 200/219, Loss: 0.0086
+2026-07-20 18:51:49 | 155.2s | Epoch  39/50 | lr=0.01000 | Train Loss: 0.0218 ACC: 0.9933 AUC: 0.9999 | Val Loss: 1.6764 ACC: 0.7248 AUC: 0.8933
+  Batch 0/219, Loss: 0.0016
+  Batch 50/219, Loss: 0.0007
+  Batch 100/219, Loss: 0.0174
+  Batch 150/219, Loss: 0.0098
+  Batch 200/219, Loss: 0.0100
+2026-07-20 18:54:25 | 155.5s | Epoch  40/50 | lr=0.01000 | Train Loss: 0.0195 ACC: 0.9931 AUC: 0.9999 | Val Loss: 1.5823 ACC: 0.7448 AUC: 0.8973
+  Batch 0/219, Loss: 0.0066
+  Batch 50/219, Loss: 0.0003
+  Batch 100/219, Loss: 0.0006
+  Batch 150/219, Loss: 0.0536
+  Batch 200/219, Loss: 0.0013
+2026-07-20 18:57:01 | 156.1s | Epoch  41/50 | lr=0.01000 | Train Loss: 0.0097 ACC: 0.9974 AUC: 1.0000 | Val Loss: 1.5458 ACC: 0.7428 AUC: 0.9050
+  Batch 0/219, Loss: 0.0050
+  Batch 50/219, Loss: 0.0014
+  Batch 100/219, Loss: 0.0375
+  Batch 150/219, Loss: 0.0095
+  Batch 200/219, Loss: 0.0002
+2026-07-20 18:59:38 | 156.8s | Epoch  42/50 | lr=0.01000 | Train Loss: 0.0155 ACC: 0.9949 AUC: 1.0000 | Val Loss: 1.5765 ACC: 0.7468 AUC: 0.9005
+  Batch 0/219, Loss: 0.0007
+  Batch 50/219, Loss: 0.0052
+  Batch 100/219, Loss: 0.0089
+  Batch 150/219, Loss: 0.0008
+  Batch 200/219, Loss: 0.0113
+2026-07-20 19:02:12 | 154.1s | Epoch  43/50 | lr=0.01000 | Train Loss: 0.0174 ACC: 0.9953 AUC: 0.9999 | Val Loss: 1.6275 ACC: 0.7438 AUC: 0.9105
+  Batch 0/219, Loss: 0.0056
+  Batch 50/219, Loss: 0.0033
+  Batch 100/219, Loss: 0.0017
+  Batch 150/219, Loss: 0.0187
+  Batch 200/219, Loss: 0.0053
+2026-07-20 19:04:46 | 153.5s | Epoch  44/50 | lr=0.01000 | Train Loss: 0.0175 ACC: 0.9944 AUC: 0.9999 | Val Loss: 1.7087 ACC: 0.7557 AUC: 0.9047
+  Batch 0/219, Loss: 0.0956
+  Batch 50/219, Loss: 0.0171
+  Batch 100/219, Loss: 0.0009
+  Batch 150/219, Loss: 0.0086
+  Batch 200/219, Loss: 0.0335
+2026-07-20 19:07:21 | 155.6s | Epoch  45/50 | lr=0.01000 | Train Loss: 0.0153 ACC: 0.9951 AUC: 0.9999 | Val Loss: 1.6865 ACC: 0.7498 AUC: 0.9023
+  Batch 0/219, Loss: 0.0018
+  Batch 50/219, Loss: 0.0031
+  Batch 100/219, Loss: 0.0007
+  Batch 150/219, Loss: 0.0008
+  Batch 200/219, Loss: 0.0006
+2026-07-20 19:09:54 | 152.9s | Epoch  46/50 | lr=0.01000 | Train Loss: 0.0055 ACC: 0.9987 AUC: 1.0000 | Val Loss: 1.6217 ACC: 0.7438 AUC: 0.9066
+  Batch 0/219, Loss: 0.0001
+  Batch 50/219, Loss: 0.0053
+  Batch 100/219, Loss: 0.0009
+  Batch 150/219, Loss: 0.2102
+  Batch 200/219, Loss: 0.0485
+2026-07-20 19:12:29 | 154.1s | Epoch  47/50 | lr=0.01000 | Train Loss: 0.0120 ACC: 0.9960 AUC: 1.0000 | Val Loss: 1.5770 ACC: 0.7547 AUC: 0.9012
+  Batch 0/219, Loss: 0.0007
+  Batch 50/219, Loss: 0.0004
+  Batch 100/219, Loss: 0.1449
+  Batch 150/219, Loss: 0.0410
+  Batch 200/219, Loss: 0.0212
+2026-07-20 19:15:03 | 154.4s | Epoch  48/50 | lr=0.01000 | Train Loss: 0.0249 ACC: 0.9922 AUC: 0.9999 | Val Loss: 1.7252 ACC: 0.7268 AUC: 0.8970
+  Batch 0/219, Loss: 0.0044
+  Batch 50/219, Loss: 0.0077
+  Batch 100/219, Loss: 0.0038
+  Batch 150/219, Loss: 0.0033
+  Batch 200/219, Loss: 0.0992
+2026-07-20 19:17:38 | 154.9s | Epoch  49/50 | lr=0.01000 | Train Loss: 0.0413 ACC: 0.9863 AUC: 0.9996 | Val Loss: 1.5829 ACC: 0.7398 AUC: 0.8936
+  Batch 0/219, Loss: 0.0141
+  Batch 50/219, Loss: 0.1232
+  Batch 100/219, Loss: 0.0022
+  Batch 150/219, Loss: 0.0038
+  Batch 200/219, Loss: 0.0013
+2026-07-20 19:20:15 | 157.0s | Epoch  50/50 | lr=0.01000 | Train Loss: 0.0244 ACC: 0.9917 AUC: 0.9999 | Val Loss: 1.6497 ACC: 0.7298 AUC: 0.9057
+
+Training complete. Best val ACC: 0.7647
+
+Loading test set...
+Using downloaded and verified file: ./data\dermamnist_224.npz
+D:\Documents\Python Programs\lab\2026.7.17 论文重投\project\scripts\train.py:202: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(os.path.join(args.save_dir, "best.pth"))
+Test  Loss: 1.2698, ACC: 0.7506, AUC: 0.9139

@@ -1,12 +1,14 @@
 """MMFRNet evaluation script."""
 
 import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
 import torch
 import torch.nn as nn
 
-from config import get_config
-from dataset import get_dataset, get_num_classes
+from utils.config import get_config
+from utils.dataset import get_dataset, get_num_classes
 from models.mmfrnet import MMFRNet
 from utils.metrics import compute_metrics
 

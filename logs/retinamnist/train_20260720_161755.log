@@ -1,0 +1,108 @@
+Using device: cuda
+Loading dataset: retinamnist
+Using downloaded and verified file: ./data\retinamnist_224.npz
+Using downloaded and verified file: ./data\retinamnist_224.npz
+Train samples: 1080, Val samples: 120
+Number of classes: 5
+Model parameters: 3.27M
+  Batch 0/34, Loss: 1.6818
+2026-07-20 16:19:06 |  59.6s | Epoch   1/50 | lr=0.01000 | Train Loss: 1.2796 ACC: 0.4630 AUC: 0.6754 | Val Loss: 1.3314 ACC: 0.5333 AUC: 0.7317
+  -> New best saved (ACC=0.5333)
+  Batch 0/34, Loss: 1.2237
+2026-07-20 16:20:03 |  57.0s | Epoch   2/50 | lr=0.01000 | Train Loss: 1.2046 ACC: 0.5046 AUC: 0.7243 | Val Loss: 1.1227 ACC: 0.4583 AUC: 0.7756
+  Batch 0/34, Loss: 1.2003
+2026-07-20 16:21:01 |  57.7s | Epoch   3/50 | lr=0.01000 | Train Loss: 1.1810 ACC: 0.5093 AUC: 0.7369 | Val Loss: 1.2138 ACC: 0.4750 AUC: 0.7450
+  Batch 0/34, Loss: 0.9226
+2026-07-20 16:21:58 |  57.1s | Epoch   4/50 | lr=0.01000 | Train Loss: 1.1978 ACC: 0.5009 AUC: 0.7364 | Val Loss: 1.1725 ACC: 0.4917 AUC: 0.8112
+  Batch 0/34, Loss: 1.2716
+2026-07-20 16:22:57 |  58.7s | Epoch   5/50 | lr=0.01000 | Train Loss: 1.1877 ACC: 0.5074 AUC: 0.7405 | Val Loss: 1.3270 ACC: 0.5000 AUC: 0.7317
+  Batch 0/34, Loss: 1.0346
+2026-07-20 16:23:57 |  59.5s | Epoch   6/50 | lr=0.01000 | Train Loss: 1.1614 ACC: 0.5111 AUC: 0.7538 | Val Loss: 0.9980 ACC: 0.4750 AUC: 0.8240
+  Batch 0/34, Loss: 1.2579
+2026-07-20 16:24:56 |  59.6s | Epoch   7/50 | lr=0.01000 | Train Loss: 1.1532 ACC: 0.5009 AUC: 0.7600 | Val Loss: 1.2374 ACC: 0.5167 AUC: 0.7570
+  Batch 0/34, Loss: 1.1675
+2026-07-20 16:25:57 |  60.8s | Epoch   8/50 | lr=0.01000 | Train Loss: 1.1421 ACC: 0.5102 AUC: 0.7673 | Val Loss: 1.2406 ACC: 0.5917 AUC: 0.7753
+  -> New best saved (ACC=0.5917)
+  Batch 0/34, Loss: 1.3171
+2026-07-20 16:26:57 |  59.0s | Epoch   9/50 | lr=0.01000 | Train Loss: 1.1568 ACC: 0.5296 AUC: 0.7606 | Val Loss: 1.1404 ACC: 0.5833 AUC: 0.7820
+  Batch 0/34, Loss: 1.1468
+2026-07-20 16:27:56 |  59.1s | Epoch  10/50 | lr=0.01000 | Train Loss: 1.1372 ACC: 0.5204 AUC: 0.7727 | Val Loss: 1.2120 ACC: 0.4250 AUC: 0.7289
+  Batch 0/34, Loss: 0.9238
+2026-07-20 16:28:56 |  60.2s | Epoch  11/50 | lr=0.01000 | Train Loss: 1.1433 ACC: 0.5139 AUC: 0.7597 | Val Loss: 1.0727 ACC: 0.4917 AUC: 0.7986
+  Batch 0/34, Loss: 0.9881
+2026-07-20 16:29:56 |  60.1s | Epoch  12/50 | lr=0.01000 | Train Loss: 1.0932 ACC: 0.5380 AUC: 0.7877 | Val Loss: 1.0969 ACC: 0.4667 AUC: 0.7852
+  Batch 0/34, Loss: 0.9084
+2026-07-20 16:30:56 |  59.2s | Epoch  13/50 | lr=0.01000 | Train Loss: 1.1011 ACC: 0.5194 AUC: 0.7881 | Val Loss: 1.1753 ACC: 0.5167 AUC: 0.7749
+  Batch 0/34, Loss: 1.0971
+2026-07-20 16:31:55 |  58.7s | Epoch  14/50 | lr=0.01000 | Train Loss: 1.0865 ACC: 0.5593 AUC: 0.7957 | Val Loss: 1.1250 ACC: 0.4667 AUC: 0.7755
+  Batch 0/34, Loss: 0.9665
+2026-07-20 16:32:52 |  57.4s | Epoch  15/50 | lr=0.01000 | Train Loss: 1.0743 ACC: 0.5435 AUC: 0.8015 | Val Loss: 1.1788 ACC: 0.5083 AUC: 0.7805
+  Batch 0/34, Loss: 1.0128
+2026-07-20 16:33:49 |  57.3s | Epoch  16/50 | lr=0.01000 | Train Loss: 1.0581 ACC: 0.5509 AUC: 0.8082 | Val Loss: 1.1450 ACC: 0.5167 AUC: 0.7377
+  Batch 0/34, Loss: 1.0361
+2026-07-20 16:34:47 |  57.0s | Epoch  17/50 | lr=0.01000 | Train Loss: 1.0475 ACC: 0.5713 AUC: 0.8173 | Val Loss: 1.0394 ACC: 0.5333 AUC: 0.8042
+  Batch 0/34, Loss: 0.9212
+2026-07-20 16:35:45 |  58.7s | Epoch  18/50 | lr=0.01000 | Train Loss: 1.0245 ACC: 0.5343 AUC: 0.8200 | Val Loss: 1.2161 ACC: 0.4333 AUC: 0.7299
+  Batch 0/34, Loss: 0.9293
+2026-07-20 16:36:45 |  59.4s | Epoch  19/50 | lr=0.01000 | Train Loss: 0.9986 ACC: 0.5722 AUC: 0.8372 | Val Loss: 1.1581 ACC: 0.4250 AUC: 0.7717
+  Batch 0/34, Loss: 1.0313
+2026-07-20 16:37:45 |  59.6s | Epoch  20/50 | lr=0.01000 | Train Loss: 1.0196 ACC: 0.5685 AUC: 0.8235 | Val Loss: 1.1380 ACC: 0.4667 AUC: 0.7901
+  Batch 0/34, Loss: 1.2389
+2026-07-20 16:38:44 |  59.4s | Epoch  21/50 | lr=0.01000 | Train Loss: 0.9611 ACC: 0.5972 AUC: 0.8489 | Val Loss: 1.2728 ACC: 0.5167 AUC: 0.7499
+  Batch 0/34, Loss: 0.8119
+2026-07-20 16:39:47 |  62.9s | Epoch  22/50 | lr=0.01000 | Train Loss: 0.9439 ACC: 0.5944 AUC: 0.8525 | Val Loss: 1.0966 ACC: 0.4917 AUC: 0.8007
+  Batch 0/34, Loss: 0.7591
+2026-07-20 16:40:47 |  59.2s | Epoch  23/50 | lr=0.01000 | Train Loss: 0.9592 ACC: 0.6046 AUC: 0.8448 | Val Loss: 1.4074 ACC: 0.4417 AUC: 0.6972
+  Batch 0/34, Loss: 0.7479
+2026-07-20 16:41:46 |  59.3s | Epoch  24/50 | lr=0.01000 | Train Loss: 0.8657 ACC: 0.6343 AUC: 0.8800 | Val Loss: 1.4544 ACC: 0.3083 AUC: 0.6861
+  Batch 0/34, Loss: 0.7958
+2026-07-20 16:42:45 |  59.3s | Epoch  25/50 | lr=0.01000 | Train Loss: 0.8180 ACC: 0.6620 AUC: 0.8911 | Val Loss: 1.2855 ACC: 0.4667 AUC: 0.7532
+  Batch 0/34, Loss: 0.6701
+2026-07-20 16:43:45 |  59.3s | Epoch  26/50 | lr=0.01000 | Train Loss: 0.7980 ACC: 0.6778 AUC: 0.8979 | Val Loss: 1.4203 ACC: 0.4583 AUC: 0.7312
+  Batch 0/34, Loss: 0.5222
+2026-07-20 16:44:44 |  59.3s | Epoch  27/50 | lr=0.01000 | Train Loss: 0.6788 ACC: 0.7269 AUC: 0.9252 | Val Loss: 1.6778 ACC: 0.4500 AUC: 0.7025
+  Batch 0/34, Loss: 0.4570
+2026-07-20 16:45:45 |  60.4s | Epoch  28/50 | lr=0.01000 | Train Loss: 0.6275 ACC: 0.7583 AUC: 0.9369 | Val Loss: 1.9593 ACC: 0.3833 AUC: 0.6558
+  Batch 0/34, Loss: 0.4677
+2026-07-20 16:46:44 |  59.2s | Epoch  29/50 | lr=0.01000 | Train Loss: 0.5301 ACC: 0.8102 AUC: 0.9527 | Val Loss: 1.6502 ACC: 0.4583 AUC: 0.7326
+  Batch 0/34, Loss: 0.2100
+2026-07-20 16:47:43 |  58.7s | Epoch  30/50 | lr=0.01000 | Train Loss: 0.4415 ACC: 0.8250 AUC: 0.9691 | Val Loss: 1.8913 ACC: 0.4500 AUC: 0.7112
+  Batch 0/34, Loss: 0.2535
+2026-07-20 16:48:42 |  58.6s | Epoch  31/50 | lr=0.01000 | Train Loss: 0.4221 ACC: 0.8417 AUC: 0.9699 | Val Loss: 2.1360 ACC: 0.4083 AUC: 0.6639
+  Batch 0/34, Loss: 0.4534
+2026-07-20 16:49:41 |  59.4s | Epoch  32/50 | lr=0.01000 | Train Loss: 0.4472 ACC: 0.8324 AUC: 0.9664 | Val Loss: 1.9414 ACC: 0.4250 AUC: 0.7307
+  Batch 0/34, Loss: 0.3438
+2026-07-20 16:50:40 |  58.9s | Epoch  33/50 | lr=0.01000 | Train Loss: 0.3054 ACC: 0.8907 AUC: 0.9852 | Val Loss: 2.3716 ACC: 0.3833 AUC: 0.6128
+  Batch 0/34, Loss: 0.1542
+2026-07-20 16:51:39 |  58.9s | Epoch  34/50 | lr=0.01000 | Train Loss: 0.2472 ACC: 0.9176 AUC: 0.9898 | Val Loss: 2.2566 ACC: 0.5000 AUC: 0.7167
+  Batch 0/34, Loss: 0.1984
+2026-07-20 16:52:38 |  58.7s | Epoch  35/50 | lr=0.01000 | Train Loss: 0.1449 ACC: 0.9574 AUC: 0.9968 | Val Loss: 2.3778 ACC: 0.4583 AUC: 0.6854
+  Batch 0/34, Loss: 0.1446
+2026-07-20 16:53:37 |  59.3s | Epoch  36/50 | lr=0.01000 | Train Loss: 0.1273 ACC: 0.9546 AUC: 0.9972 | Val Loss: 2.3444 ACC: 0.4917 AUC: 0.7237
+  Batch 0/34, Loss: 0.0237
+2026-07-20 16:54:36 |  58.5s | Epoch  37/50 | lr=0.01000 | Train Loss: 0.1035 ACC: 0.9694 AUC: 0.9983 | Val Loss: 2.6360 ACC: 0.4917 AUC: 0.7128
+  Batch 0/34, Loss: 0.0629
+2026-07-20 16:55:37 |  61.3s | Epoch  38/50 | lr=0.01000 | Train Loss: 0.1337 ACC: 0.9519 AUC: 0.9970 | Val Loss: 2.5920 ACC: 0.4417 AUC: 0.7209
+  Batch 0/34, Loss: 0.3120
+2026-07-20 16:56:36 |  58.8s | Epoch  39/50 | lr=0.01000 | Train Loss: 0.1359 ACC: 0.9491 AUC: 0.9970 | Val Loss: 2.4998 ACC: 0.4833 AUC: 0.7351
+  Batch 0/34, Loss: 0.0294
+2026-07-20 16:57:35 |  58.9s | Epoch  40/50 | lr=0.01000 | Train Loss: 0.0706 ACC: 0.9759 AUC: 0.9994 | Val Loss: 2.8121 ACC: 0.4333 AUC: 0.6739
+  Batch 0/34, Loss: 0.0734
+2026-07-20 16:58:34 |  58.9s | Epoch  41/50 | lr=0.01000 | Train Loss: 0.0406 ACC: 0.9870 AUC: 0.9998 | Val Loss: 2.7671 ACC: 0.4667 AUC: 0.7075
+  Batch 0/34, Loss: 0.0074
+2026-07-20 16:59:34 |  59.3s | Epoch  42/50 | lr=0.01000 | Train Loss: 0.0644 ACC: 0.9815 AUC: 0.9990 | Val Loss: 2.9049 ACC: 0.4500 AUC: 0.6969
+  Batch 0/34, Loss: 0.0556
+2026-07-20 17:00:33 |  59.6s | Epoch  43/50 | lr=0.01000 | Train Loss: 0.0366 ACC: 0.9898 AUC: 0.9999 | Val Loss: 2.5322 ACC: 0.5167 AUC: 0.7566
+  Batch 0/34, Loss: 0.0081
+2026-07-20 17:01:30 |  57.1s | Epoch  44/50 | lr=0.01000 | Train Loss: 0.0215 ACC: 0.9944 AUC: 0.9999 | Val Loss: 2.9993 ACC: 0.4250 AUC: 0.6960
+  Batch 0/34, Loss: 0.0097
+2026-07-20 17:02:28 |  57.3s | Epoch  45/50 | lr=0.01000 | Train Loss: 0.0161 ACC: 0.9972 AUC: 1.0000 | Val Loss: 2.9243 ACC: 0.4333 AUC: 0.7166
+  Batch 0/34, Loss: 0.0035
+2026-07-20 17:03:25 |  57.1s | Epoch  46/50 | lr=0.01000 | Train Loss: 0.0063 ACC: 0.9991 AUC: 1.0000 | Val Loss: 2.8294 ACC: 0.4750 AUC: 0.7139
+  Batch 0/34, Loss: 0.0022
+2026-07-20 17:04:24 |  59.0s | Epoch  47/50 | lr=0.01000 | Train Loss: 0.0037 ACC: 1.0000 AUC: 1.0000 | Val Loss: 2.8962 ACC: 0.4333 AUC: 0.7085
+  Batch 0/34, Loss: 0.0013
+2026-07-20 17:05:24 |  60.1s | Epoch  48/50 | lr=0.01000 | Train Loss: 0.0037 ACC: 1.0000 AUC: 1.0000 | Val Loss: 2.9941 ACC: 0.4333 AUC: 0.7081
+  Batch 0/34, Loss: 0.0010
+2026-07-20 17:06:24 |  60.0s | Epoch  49/50 | lr=0.01000 | Train Loss: 0.0060 ACC: 0.9991 AUC: 1.0000 | Val Loss: 3.0497 ACC: 0.4333 AUC: 0.6972
+  Batch 0/34, Loss: 0.0009

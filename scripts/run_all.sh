@@ -6,11 +6,11 @@ PROJECT="D:/Documents/Python Programs/lab/2026.7.17 论文重投/project"
 
 declare -A EPOCHS
 EPOCHS=(
-    ["pneumoniamnist"]=30
-    ["breastmnist"]=25
-    ["retinamnist"]=15
-    ["dermamnist"]=15
-    ["organcmnist"]=20
+    ["pneumoniamnist"]=50
+    ["breastmnist"]=50
+    ["retinamnist"]=50
+    ["dermamnist"]=50
+    ["organcmnist"]=50
 )
 
 for DS in pneumoniamnist breastmnist retinamnist dermamnist organcmnist; do
@@ -18,12 +18,14 @@ for DS in pneumoniamnist breastmnist retinamnist dermamnist organcmnist; do
     echo "Dataset: $DS (epochs=${EPOCHS[$DS]})"
     echo "=============================================="
     cd "$PROJECT"
+    mkdir -p "logs/$DS"
+    TS=$(date +%Y%m%d_%H%M%S)
     $PYTHON -u train.py \
         --dataset "$DS" \
         --batch_size 32 \
         --epochs "${EPOCHS[$DS]}" \
         --save_dir "checkpoints/$DS" \
-        > "log/${DS}_test.log" 2>&1
+        > "logs/${DS}/train_${TS}.log" 2>&1
     echo "Done: $DS"
     echo ""
 done
@@ -35,5 +37,5 @@ echo ""
 echo "===== SUMMARY ====="
 for DS in pneumoniamnist breastmnist retinamnist dermamnist organcmnist; do
     echo "--- $DS ---"
-    grep -E "(Best val|Test )" "log/${DS}_test.log"
+    grep -E "(Best val|Test )" "logs/${DS}/"*.log 2>/dev/null || echo "  (no log found)"
 done

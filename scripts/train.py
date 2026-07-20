@@ -2,14 +2,17 @@
 
 import os
 import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import random
+import time
+from datetime import datetime
 import shutil
 import numpy as np
 import torch
 import torch.nn as nn
 
-from config import get_config
-from dataset import get_dataset, get_num_classes
+from utils.config import get_config
+from utils.dataset import get_dataset, get_num_classes
 from models.mmfrnet import MMFRNet
 from utils.metrics import compute_metrics
 
@@ -152,7 +155,7 @@ def main():
 
     for epoch in range(1, args.epochs + 1):
         current_lr = optimizer.param_groups[0]["lr"]
-        print(f"\nEpoch {epoch}/{args.epochs} (lr={current_lr:.5f})")
+        t0 = time.time()
 
         train_loss, train_acc, train_auc = train_epoch(
             model, train_loader, optimizer, criterion, device, epoch, args,
@@ -161,9 +164,18 @@ def main():
             model, val_loader, criterion, device, args,
         )
 
-        print(f"  Train Loss: {train_loss:.4f}, ACC: {train_acc:.4f}, "
-              f"AUC: {train_auc:.4f}", flush=True)
-        print(f"  Val   Loss: {val_loss:.4f}, ACC: {val_acc:.4f}, "
+        elapsed = time.time() - t0
+        if elapsed < 1:
+            elapsed_str = f"{elapsed*1000:.0f}ms"
+        else:
+            elapsed_str = f"{elapsed:.1f}s"
+
+        ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{ts} | {elapsed_str:>6s} | "
+              f"Epoch {epoch:3d}/{args.epochs} | lr={current_lr:.5f} | "
+              f"Train Loss: {train_loss:.4f} ACC: {train_acc:.4f} "
+              f"AUC: {train_auc:.4f} | "
+              f"Val Loss: {val_loss:.4f} ACC: {val_acc:.4f} "
               f"AUC: {val_auc:.4f}", flush=True)
 
         scheduler.step()
@@ -172,7 +184,10 @@ def main():
             best_val_acc = val_acc
             save_checkpoint(model, optimizer, epoch, val_acc,
                            os.path.join(args.save_dir, "best.pth"))
-            print(f"  Best model saved (ACC={best_val_acc:.4f})")
+            print(f"  -> New best saved (ACC={val_acc:.4f})")
+
+        save_checkpoint(model, optimizer, epoch, val_acc,
+                       os.path.join(args.save_dir, "last.pth"))
 
     print(f"\nTraining complete. Best val ACC: {best_val_acc:.4f}")
 

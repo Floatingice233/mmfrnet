@@ -45,23 +45,33 @@ Uses [MedMNIST](https://medmnist.com/) benchmark datasets / 使用 MedMNIST 公�
 
 Datasets are downloaded automatically on first use / 数据集首次使用时自动下载。
 
+## Quick Start / 快速开始
+
+```bash
+# Train all 5 datasets sequentially
+bash scripts/run_all.sh
+
+# Or train individual datasets
+python scripts/train.py --dataset pneumoniamnist
+```
+
 ## Training / 训练
 
 ```bash
-# Train on PneumoniaMNIST / 在肺炎数据集上训练
-python train.py --dataset pneumoniamnist
+# Train a single dataset
+python scripts/train.py --dataset pneumoniamnist
 
-# Train on other datasets / 训练其他数据集
-python train.py --dataset dermamnist --batch_size 64 --epochs 150
+# Full options
+python scripts/train.py --dataset dermamnist --batch_size 64 --epochs 150
 
-# Full options / 完整参数
-python train.py --dataset pneumoniamnist --embed_dim 64 --batch_size 128 --epochs 150 --lr_init 0.01
+# Resume from checkpoint (+30 epochs)
+python scripts/resume.py
 ```
 
 ## Testing / 测试
 
 ```bash
-python test.py --dataset pneumoniamnist --save_dir ./checkpoints
+python scripts/test.py --dataset pneumoniamnist --save_dir ./checkpoints
 ```
 
 ## Key Parameters / 关键参数
@@ -79,27 +89,32 @@ python test.py --dataset pneumoniamnist --save_dir ./checkpoints
 ## Model Variants / 模型变体
 
 - `MMFRNet(num_classes, embed_dim=64)` — Base / 基础版 (22.8M 参数)
-- `MMFRNet(num_classes, embed_dim=32)` — Small / 轻量版 (更少参数)
+- `MMFRNet(num_classes, embed1_dim=32)` — Small / 轻量版 (更少参数)
 
 ## Project Structure / 项目结构
 
 ```
 project/
-├── data/                        # 数据集存放
-├── models/
-│   ├── gir.py                   # 全局信息正则化模块
-│   ├── lir.py                   # 局部信息正则化模块 (WNA)
-│   ├── fftconv.py               # 傅里叶频域卷积模块
-│   ├── qgconv.py                # 四元数门控卷积模块
-│   └── mmfrnet.py               # 完整MMFRNet模型
-├── utils/
-│   ├── transforms.py            # 多视图数据增强
-│   └── metrics.py               # ACC/AUC评估指标
-├── config.py                    # 超参数配置
-├── dataset.py                   # MedMNIST数据加载
-├── train.py                     # 训练主脚本
-├── test.py                      # 测试评估脚本
-└── requirements.txt             # 依赖列表
+├── data/                        # Datasets
+├── scripts/                     # Entry-point scripts
+│   ├── train.py                 # Train a single dataset
+│   ├── test.py                  # Evaluate a trained model
+│   ├── resume.py                # Resume training from checkpoint
+│   └── run_all.sh               # Train all 5 datasets sequentially
+├── models/                      # Model modules
+│   ├── gir.py                   # Global Information Regularization
+│   ├── lir.py                   # Local Information Regularization (WNA)
+│   ├── fftconv.py               # FFT frequency-domain convolution
+│   ├── qgconv.py                # Quaternion Gated Convolution
+│   └── mmfrnet.py               # Full MMFRNet model
+├── utils/                       # Utilities
+│   ├── config.py                # Hyperparameter configuration
+│   ├── dataset.py               # MedMNIST data loading
+│   ├── transforms.py            # Multi-view data augmentation
+│   └── metrics.py               # ACC/AUC evaluation metrics
+├── checkpoints/<dataset>/       # Model checkpoints (best.pth, last.pth)
+├── logs/<dataset>/              # Training logs (timestamped)
+└── requirements.txt
 ```
 
 ## Reference / 参考文献

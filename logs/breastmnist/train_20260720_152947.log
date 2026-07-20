@@ -1,0 +1,122 @@
+Using device: cuda
+Loading dataset: breastmnist
+Using downloaded and verified file: ./data\breastmnist_224.npz
+Using downloaded and verified file: ./data\breastmnist_224.npz
+Train samples: 546, Val samples: 78
+Number of classes: 2
+Model parameters: 3.27M
+  Batch 0/18, Loss: 0.6763
+2026-07-20 15:30:47 |  50.7s | Epoch   1/50 | lr=0.01000 | Train Loss: 0.5457 ACC: 0.7308 AUC: 0.6676 | Val Loss: 0.7760 ACC: 0.2692 AUC: 0.6817
+  -> New best saved (ACC=0.2692)
+  Batch 0/18, Loss: 0.3993
+2026-07-20 15:31:37 |  49.3s | Epoch   2/50 | lr=0.01000 | Train Loss: 0.5295 ACC: 0.7656 AUC: 0.7489 | Val Loss: 0.8553 ACC: 0.2692 AUC: 0.7168
+  Batch 0/18, Loss: 0.4597
+2026-07-20 15:32:26 |  48.9s | Epoch   3/50 | lr=0.01000 | Train Loss: 0.4870 ACC: 0.7784 AUC: 0.7686 | Val Loss: 0.6264 ACC: 0.7308 AUC: 0.7870
+  -> New best saved (ACC=0.7308)
+  Batch 0/18, Loss: 0.4646
+2026-07-20 15:33:15 |  49.5s | Epoch   4/50 | lr=0.01000 | Train Loss: 0.4194 ACC: 0.8095 AUC: 0.8398 | Val Loss: 0.4240 ACC: 0.8205 AUC: 0.8622
+  -> New best saved (ACC=0.8205)
+  Batch 0/18, Loss: 0.3569
+2026-07-20 15:34:09 |  53.2s | Epoch   5/50 | lr=0.01000 | Train Loss: 0.3979 ACC: 0.8333 AUC: 0.8909 | Val Loss: 4.3561 ACC: 0.7179 AUC: 0.5401
+  Batch 0/18, Loss: 0.7486
+2026-07-20 15:35:01 |  52.1s | Epoch   6/50 | lr=0.01000 | Train Loss: 0.4671 ACC: 0.7802 AUC: 0.8056 | Val Loss: 0.3769 ACC: 0.8205 AUC: 0.9190
+  Batch 0/18, Loss: 0.4944
+2026-07-20 15:35:54 |  52.8s | Epoch   7/50 | lr=0.01000 | Train Loss: 0.3513 ACC: 0.8516 AUC: 0.8917 | Val Loss: 0.3235 ACC: 0.8333 AUC: 0.9165
+  -> New best saved (ACC=0.8333)
+  Batch 0/18, Loss: 0.2760
+2026-07-20 15:36:45 |  51.2s | Epoch   8/50 | lr=0.01000 | Train Loss: 0.2437 ACC: 0.9029 AUC: 0.9555 | Val Loss: 0.3875 ACC: 0.8333 AUC: 0.9298
+  Batch 0/18, Loss: 0.1753
+2026-07-20 15:37:36 |  50.8s | Epoch   9/50 | lr=0.01000 | Train Loss: 0.2403 ACC: 0.9322 AUC: 0.9796 | Val Loss: 0.7760 ACC: 0.7949 AUC: 0.8555
+  Batch 0/18, Loss: 0.0554
+2026-07-20 15:38:28 |  51.3s | Epoch  10/50 | lr=0.01000 | Train Loss: 0.4154 ACC: 0.8187 AUC: 0.8770 | Val Loss: 0.3749 ACC: 0.7692 AUC: 0.8822
+  Batch 0/18, Loss: 0.3306
+2026-07-20 15:39:20 |  51.7s | Epoch  11/50 | lr=0.01000 | Train Loss: 0.2550 ACC: 0.8883 AUC: 0.9487 | Val Loss: 0.3025 ACC: 0.8590 AUC: 0.9014
+  -> New best saved (ACC=0.8590)
+  Batch 0/18, Loss: 0.2258
+2026-07-20 15:40:11 |  51.3s | Epoch  12/50 | lr=0.01000 | Train Loss: 0.1986 ACC: 0.9542 AUC: 0.9868 | Val Loss: 0.6970 ACC: 0.8205 AUC: 0.9014
+  Batch 0/18, Loss: 0.0621
+2026-07-20 15:41:03 |  51.2s | Epoch  13/50 | lr=0.01000 | Train Loss: 0.2858 ACC: 0.8791 AUC: 0.9414 | Val Loss: 1.2380 ACC: 0.7692 AUC: 0.8492
+  Batch 0/18, Loss: 0.1216
+2026-07-20 15:41:54 |  50.9s | Epoch  14/50 | lr=0.01000 | Train Loss: 0.2473 ACC: 0.8901 AUC: 0.9484 | Val Loss: 0.3672 ACC: 0.8590 AUC: 0.9165
+  Batch 0/18, Loss: 0.0405
+2026-07-20 15:42:45 |  51.0s | Epoch  15/50 | lr=0.01000 | Train Loss: 0.0802 ACC: 0.9762 AUC: 0.9972 | Val Loss: 0.7872 ACC: 0.8462 AUC: 0.8855
+  Batch 0/18, Loss: 0.0175
+2026-07-20 15:43:36 |  50.9s | Epoch  16/50 | lr=0.01000 | Train Loss: 0.0395 ACC: 0.9908 AUC: 0.9990 | Val Loss: 0.3819 ACC: 0.8333 AUC: 0.9223
+  Batch 0/18, Loss: 0.0073
+2026-07-20 15:44:27 |  51.5s | Epoch  17/50 | lr=0.01000 | Train Loss: 0.0095 ACC: 0.9982 AUC: 1.0000 | Val Loss: 0.4607 ACC: 0.8846 AUC: 0.9223
+  -> New best saved (ACC=0.8846)
+  Batch 0/18, Loss: 0.0069
+2026-07-20 15:45:20 |  52.9s | Epoch  18/50 | lr=0.01000 | Train Loss: 0.0049 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.4527 ACC: 0.8846 AUC: 0.9181
+  Batch 0/18, Loss: 0.0017
+2026-07-20 15:46:11 |  50.7s | Epoch  19/50 | lr=0.01000 | Train Loss: 0.0038 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.5407 ACC: 0.8846 AUC: 0.9123
+  Batch 0/18, Loss: 0.0006
+2026-07-20 15:47:02 |  51.0s | Epoch  20/50 | lr=0.01000 | Train Loss: 0.0016 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.4929 ACC: 0.8846 AUC: 0.9140
+  Batch 0/18, Loss: 0.0007
+2026-07-20 15:47:54 |  51.1s | Epoch  21/50 | lr=0.01000 | Train Loss: 0.0078 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.6417 ACC: 0.8846 AUC: 0.9031
+  Batch 0/18, Loss: 0.0002
+2026-07-20 15:48:45 |  50.9s | Epoch  22/50 | lr=0.01000 | Train Loss: 0.0205 ACC: 0.9963 AUC: 0.9999 | Val Loss: 0.3892 ACC: 0.8590 AUC: 0.9206
+  Batch 0/18, Loss: 0.0005
+2026-07-20 15:49:36 |  51.2s | Epoch  23/50 | lr=0.01000 | Train Loss: 0.0293 ACC: 0.9872 AUC: 0.9995 | Val Loss: 0.7098 ACC: 0.8846 AUC: 0.8864
+  Batch 0/18, Loss: 0.0061
+2026-07-20 15:50:27 |  50.9s | Epoch  24/50 | lr=0.01000 | Train Loss: 0.0197 ACC: 0.9890 AUC: 0.9998 | Val Loss: 0.9891 ACC: 0.8718 AUC: 0.8968
+  Batch 0/18, Loss: 0.0039
+2026-07-20 15:51:19 |  51.6s | Epoch  25/50 | lr=0.01000 | Train Loss: 0.0341 ACC: 0.9945 AUC: 0.9999 | Val Loss: 2.6508 ACC: 0.7692 AUC: 0.8266
+  Batch 0/18, Loss: 0.0166
+2026-07-20 15:52:10 |  50.9s | Epoch  26/50 | lr=0.01000 | Train Loss: 0.2547 ACC: 0.9158 AUC: 0.9694 | Val Loss: 1.1704 ACC: 0.8462 AUC: 0.8404
+  Batch 0/18, Loss: 0.2008
+2026-07-20 15:53:01 |  51.0s | Epoch  27/50 | lr=0.01000 | Train Loss: 0.1031 ACC: 0.9560 AUC: 0.9920 | Val Loss: 0.8864 ACC: 0.8462 AUC: 0.8525
+  Batch 0/18, Loss: 0.0270
+2026-07-20 15:53:52 |  50.5s | Epoch  28/50 | lr=0.01000 | Train Loss: 0.0408 ACC: 0.9835 AUC: 0.9997 | Val Loss: 0.5882 ACC: 0.8846 AUC: 0.8713
+  Batch 0/18, Loss: 0.0071
+2026-07-20 15:54:43 |  51.6s | Epoch  29/50 | lr=0.01000 | Train Loss: 0.0214 ACC: 0.9945 AUC: 1.0000 | Val Loss: 0.4914 ACC: 0.8718 AUC: 0.8847
+  Batch 0/18, Loss: 0.0206
+2026-07-20 15:55:36 |  52.5s | Epoch  30/50 | lr=0.01000 | Train Loss: 0.0087 ACC: 0.9982 AUC: 1.0000 | Val Loss: 0.8129 ACC: 0.8590 AUC: 0.8718
+  Batch 0/18, Loss: 0.0060
+2026-07-20 15:56:30 |  54.3s | Epoch  31/50 | lr=0.01000 | Train Loss: 0.0038 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.5063 ACC: 0.8846 AUC: 0.8906
+  Batch 0/18, Loss: 0.0010
+2026-07-20 15:57:22 |  51.0s | Epoch  32/50 | lr=0.01000 | Train Loss: 0.0048 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.6902 ACC: 0.8718 AUC: 0.8743
+  Batch 0/18, Loss: 0.0029
+2026-07-20 15:58:13 |  51.1s | Epoch  33/50 | lr=0.01000 | Train Loss: 0.0032 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.5998 ACC: 0.8846 AUC: 0.8772
+  Batch 0/18, Loss: 0.0002
+2026-07-20 15:59:04 |  51.2s | Epoch  34/50 | lr=0.01000 | Train Loss: 0.0011 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.5668 ACC: 0.8846 AUC: 0.8835
+  Batch 0/18, Loss: 0.0003
+2026-07-20 15:59:57 |  52.5s | Epoch  35/50 | lr=0.01000 | Train Loss: 0.0008 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.6981 ACC: 0.8718 AUC: 0.8864
+  Batch 0/18, Loss: 0.0003
+2026-07-20 16:00:46 |  49.2s | Epoch  36/50 | lr=0.01000 | Train Loss: 0.0013 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.6375 ACC: 0.8974 AUC: 0.8839
+  -> New best saved (ACC=0.8974)
+  Batch 0/18, Loss: 0.0002
+2026-07-20 16:01:37 |  50.4s | Epoch  37/50 | lr=0.01000 | Train Loss: 0.0019 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.7534 ACC: 0.8590 AUC: 0.8881
+  Batch 0/18, Loss: 0.0130
+2026-07-20 16:02:26 |  49.2s | Epoch  38/50 | lr=0.01000 | Train Loss: 0.0039 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.6371 ACC: 0.8846 AUC: 0.8893
+  Batch 0/18, Loss: 0.0001
+2026-07-20 16:03:15 |  49.1s | Epoch  39/50 | lr=0.01000 | Train Loss: 0.0014 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.7054 ACC: 0.8718 AUC: 0.8730
+  Batch 0/18, Loss: 0.0002
+2026-07-20 16:04:05 |  49.9s | Epoch  40/50 | lr=0.01000 | Train Loss: 0.0046 ACC: 0.9982 AUC: 1.0000 | Val Loss: 0.7069 ACC: 0.8590 AUC: 0.8839
+  Batch 0/18, Loss: 0.0003
+2026-07-20 16:04:55 |  49.4s | Epoch  41/50 | lr=0.01000 | Train Loss: 0.0028 ACC: 0.9982 AUC: 1.0000 | Val Loss: 1.0689 ACC: 0.8590 AUC: 0.8676
+  Batch 0/18, Loss: 0.0007
+2026-07-20 16:05:48 |  53.5s | Epoch  42/50 | lr=0.01000 | Train Loss: 0.0030 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.7774 ACC: 0.8846 AUC: 0.8822
+  Batch 0/18, Loss: 0.0003
+2026-07-20 16:06:40 |  51.1s | Epoch  43/50 | lr=0.01000 | Train Loss: 0.0007 ACC: 1.0000 AUC: 1.0000 | Val Loss: 0.8228 ACC: 0.8718 AUC: 0.8676
+  Batch 0/18, Loss: 0.0017
+2026-07-20 16:07:31 |  50.9s | Epoch  44/50 | lr=0.01000 | Train Loss: 0.0044 ACC: 1.0000 AUC: 1.0000 | Val Loss: 1.0145 ACC: 0.8462 AUC: 0.8755
+  Batch 0/18, Loss: 0.0001
+2026-07-20 16:08:22 |  51.0s | Epoch  45/50 | lr=0.01000 | Train Loss: 0.1210 ACC: 0.9963 AUC: 0.9999 | Val Loss: 0.4388 ACC: 0.8718 AUC: 0.9156
+  Batch 0/18, Loss: 0.0069
+2026-07-20 16:09:13 |  51.3s | Epoch  46/50 | lr=0.01000 | Train Loss: 0.6168 ACC: 0.8571 AUC: 0.9072 | Val Loss: 0.5361 ACC: 0.7564 AUC: 0.8780
+  Batch 0/18, Loss: 0.5633
+2026-07-20 16:10:04 |  51.1s | Epoch  47/50 | lr=0.01000 | Train Loss: 0.4770 ACC: 0.7821 AUC: 0.8461 | Val Loss: 0.6068 ACC: 0.7179 AUC: 0.7469
+  Batch 0/18, Loss: 0.3593
+2026-07-20 16:10:56 |  51.1s | Epoch  48/50 | lr=0.01000 | Train Loss: 0.3496 ACC: 0.8590 AUC: 0.9120 | Val Loss: 0.3841 ACC: 0.8718 AUC: 0.8697
+  Batch 0/18, Loss: 0.1440
+2026-07-20 16:11:47 |  51.1s | Epoch  49/50 | lr=0.01000 | Train Loss: 0.1750 ACC: 0.9359 AUC: 0.9822 | Val Loss: 0.4904 ACC: 0.8077 AUC: 0.8588
+  Batch 0/18, Loss: 0.0623
+2026-07-20 16:12:38 |  50.9s | Epoch  50/50 | lr=0.01000 | Train Loss: 0.0954 ACC: 0.9725 AUC: 0.9924 | Val Loss: 0.6389 ACC: 0.8462 AUC: 0.8601
+
+Training complete. Best val ACC: 0.8974
+
+Loading test set...
+Using downloaded and verified file: ./data\breastmnist_224.npz
+D:\Documents\Python Programs\lab\2026.7.17 论文重投\project\scripts\train.py:202: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(os.path.join(args.save_dir, "best.pth"))
+Test  Loss: 1.2563, ACC: 0.8013, AUC: 0.7979
