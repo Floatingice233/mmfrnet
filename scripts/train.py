@@ -48,18 +48,22 @@ def train_epoch(model, loader, optimizer, criterion, device, epoch, args):
         view_b = view_b.to(device)
         targets = targets.to(device)
 
-        optimizer.zero_grad()
         outputs = model(view_a, view_b)
-        loss = criterion(outputs, targets)
+        raw_loss = criterion(outputs, targets)
+        loss = raw_loss / args.grad_accum_steps
         loss.backward()
-        optimizer.step()
 
-        total_loss += loss.item()
+        if (batch_idx + 1) % args.grad_accum_steps == 0 or \
+           batch_idx == len(loader) - 1:
+            optimizer.step()
+            optimizer.zero_grad()
+
+        total_loss += raw_loss.item()
         all_outputs.append(outputs.detach().cpu().numpy())
         all_targets.append(targets.detach().cpu().numpy())
 
         if batch_idx % args.log_interval == 0:
-            print(f"  Batch {batch_idx}/{len(loader)}, Loss: {loss.item():.4f}",
+            print(f"  Batch {batch_idx}/{len(loader)}, Loss: {raw_loss.item():.4f}",
                   flush=True)
 
     avg_loss = total_loss / len(loader)
@@ -111,16 +115,19 @@ def main():
     os.makedirs(args.save_dir, exist_ok=True)
 
     # Data
+    micro_batch = args.batch_size // args.grad_accum_steps
     print(f"Loading dataset: {args.dataset}")
+    print(f"Effective batch size: {args.batch_size} "
+          f"(micro={micro_batch} x accum={args.grad_accum_steps})")
     train_set = get_dataset(args.dataset, args.data_dir, "train", args.img_size)
     val_set = get_dataset(args.dataset, args.data_dir, "val", args.img_size)
 
     train_loader = torch.utils.data.DataLoader(
-        train_set, batch_size=args.batch_size, shuffle=True,
+        train_set, batch_size=micro_batch, shuffle=True,
         num_workers=args.num_workers, pin_memory=True,
     )
     val_loader = torch.utils.data.DataLoader(
-        val_set, batch_size=args.batch_size, shuffle=False,
+        val_set, batch_size=micro_batch, shuffle=False,
         num_workers=args.num_workers, pin_memory=True,
     )
 

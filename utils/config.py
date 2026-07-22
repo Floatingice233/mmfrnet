@@ -61,5 +61,7 @@ def get_config():
                         help="Log every N steps")
     parser.add_argument("--save_dir", type=str, default="./checkpoints",
                         help="Model checkpoint directory")
+    parser.add_argument("--grad_accum_steps", type=int, default=4,
+                        help="Gradient accumulation steps (batch_size/grad_accum_steps per micro-batch)")
 
     return parser.parse_args()

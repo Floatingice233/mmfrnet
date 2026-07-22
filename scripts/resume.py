@@ -34,21 +34,27 @@ def evaluate(model, loader, criterion, device, num_classes):
     return avg_loss, acc, auc
 
 
-def train_epoch(model, loader, optimizer, criterion, device, num_classes):
+def train_epoch(model, loader, optimizer, criterion, device, num_classes,
+                 log_fn=None, log_interval=0):
     model.train()
     total_loss = 0.0
     all_preds, all_labels = [], []
-    for view_a, view_b, labels in loader:
+    for batch_idx, (view_a, view_b, labels) in enumerate(loader):
         view_a, view_b = view_a.to(device), view_b.to(device)
         labels = labels.to(device)
-        optimizer.zero_grad()
         outputs = model(view_a, view_b)
-        loss = criterion(outputs, labels)
+        raw_loss = criterion(outputs, labels)
+        loss = raw_loss / 4
         loss.backward()
-        optimizer.step()
-        total_loss += loss.item() * view_a.size(0)
+        if (batch_idx + 1) % 4 == 0 or batch_idx == len(loader) - 1:
+            optimizer.step()
+            optimizer.zero_grad()
+        total_loss += raw_loss.item() * view_a.size(0)
         all_preds.append(outputs.detach().cpu().numpy())
         all_labels.append(labels.cpu().numpy())
+        if log_fn and log_interval and batch_idx % log_interval == 0:
+            log_fn(f"  Batch {batch_idx}/{len(loader)}, "
+                   f"Loss: {raw_loss.item():.4f}")
     preds = np.concatenate(all_preds, axis=0)
     labels = np.concatenate(all_labels, axis=0)
     avg_loss = total_loss / len(loader.dataset)
@@ -57,7 +63,8 @@ def train_epoch(model, loader, optimizer, criterion, device, num_classes):
 
 
 def continue_training(dataset_name, data_dir, ckpt_dir, device, extra_epochs=30,
-                      log_f=None):
+                      log_f=None, log_interval=50, lr_init=0.01,
+                      lr_step=100, lr_decay=0.1, batch_size=128):
     if log_f is None:
         log_f = sys.stdout
 
@@ -75,11 +82,12 @@ def continue_training(dataset_name, data_dir, ckpt_dir, device, extra_epochs=30,
     tprint(f"Train: {len(train_set)}, Val: {len(val_set)}, "
            f"Test: {len(test_set)}")
 
-    train_loader = DataLoader(train_set, batch_size=32, shuffle=True,
+    micro_batch = batch_size // 4
+    train_loader = DataLoader(train_set, batch_size=micro_batch, shuffle=True,
                               num_workers=0, pin_memory=True)
-    val_loader = DataLoader(val_set, batch_size=32, shuffle=False,
+    val_loader = DataLoader(val_set, batch_size=micro_batch, shuffle=False,
                             num_workers=0, pin_memory=True)
-    test_loader = DataLoader(test_set, batch_size=32, shuffle=False,
+    test_loader = DataLoader(test_set, batch_size=micro_batch, shuffle=False,
                              num_workers=0, pin_memory=True)
 
     model = MMFRNet(
@@ -89,27 +97,32 @@ def continue_training(dataset_name, data_dir, ckpt_dir, device, extra_epochs=30,
 
     ckpt_path = os.path.join(ckpt_dir, dataset_name, "best.pth")
     last_path = os.path.join(ckpt_dir, dataset_name, "last.pth")
-    ckpt = torch.load(ckpt_path, map_location=device, weights_only=False)
+    ckpt = torch.load(last_path, map_location=device, weights_only=False)
     model.load_state_dict(ckpt["model_state_dict"])
     start_epoch = ckpt.get("epoch", 0)
-    prev_val_acc = ckpt.get("acc", ckpt.get("val_acc", 0))
-    prev_val_auc = ckpt.get("val_auc", 0)
-    tprint(f"Loaded checkpoint: epoch={start_epoch}, "
-           f"val_acc={prev_val_acc:.4f}")
+    tprint(f"Loaded last checkpoint: epoch={start_epoch}")
+
+    best_ckpt = torch.load(ckpt_path, map_location=device, weights_only=False)
+    best_val_acc = best_ckpt.get("acc", best_ckpt.get("val_acc", 0))
+    best_val_auc = best_ckpt.get("val_auc", 0)
+    best_epoch = best_ckpt.get("epoch", 0)
+    tprint(f"Previous best: epoch={best_epoch}, val_acc={best_val_acc:.4f}")
 
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(
-        model.parameters(), lr=0.001, momentum=0.9, weight_decay=1e-4)
-
-    best_val_acc = prev_val_acc
-    best_val_auc = prev_val_auc
-    best_epoch = start_epoch
+        model.parameters(), lr=lr_init, momentum=0.9, weight_decay=1e-4)
+    if "optimizer_state_dict" in ckpt:
+        optimizer.load_state_dict(ckpt["optimizer_state_dict"])
+    scheduler = torch.optim.lr_scheduler.StepLR(
+        optimizer, step_size=lr_step, gamma=lr_decay, last_epoch=start_epoch)
 
     for ep in range(1, extra_epochs + 1):
         current_epoch = start_epoch + ep
+        current_lr = optimizer.param_groups[0]["lr"]
         t0 = time.time()
         train_loss, train_acc, train_auc = train_epoch(
-            model, train_loader, optimizer, criterion, device, num_classes)
+            model, train_loader, optimizer, criterion, device, num_classes,
+            log_fn=tprint, log_interval=log_interval)
         val_loss, val_acc, val_auc = evaluate(
             model, val_loader, criterion, device, num_classes)
         elapsed = time.time() - t0
@@ -120,14 +133,17 @@ def continue_training(dataset_name, data_dir, ckpt_dir, device, extra_epochs=30,
 
         ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         tprint(f"{ts} | {elapsed_str:>6s} | "
-               f"Epoch {current_epoch:3d} | "
+               f"Epoch {current_epoch:3d} | lr={current_lr:.5f} | "
                f"Train Loss: {train_loss:.4f} ACC: {train_acc:.4f} "
                f"AUC: {train_auc:.4f} | "
                f"Val Loss: {val_loss:.4f} ACC: {val_acc:.4f} "
                f"AUC: {val_auc:.4f}")
 
+        scheduler.step()
+
         torch.save({
             "model_state_dict": model.state_dict(),
+            "optimizer_state_dict": optimizer.state_dict(),
             "epoch": current_epoch,
             "val_acc": val_acc,
             "val_auc": val_auc,
@@ -139,6 +155,7 @@ def continue_training(dataset_name, data_dir, ckpt_dir, device, extra_epochs=30,
             best_epoch = current_epoch
             torch.save({
                 "model_state_dict": model.state_dict(),
+                "optimizer_state_dict": optimizer.state_dict(),
                 "epoch": current_epoch,
                 "val_acc": val_acc,
                 "val_auc": val_auc,
